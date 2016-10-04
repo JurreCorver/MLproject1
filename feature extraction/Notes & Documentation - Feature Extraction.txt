@@ -3,12 +3,28 @@ Notes
 
 Documentation
 1.Dataset name
-format: 'cluster_#_org.csv'
+format: 'cluster_#_train_org.csv'//'cluster_#_test_org.csv'
 -org indicates that there is no transformation to the MRI intensity values
 -# stands for the number of cluster used in k++ means clustering method
+-train/test indicates training and test set repectively
+
 
 2.Data description
 - each column is a data point;
 - there are six statistical features: mean, variance, standard variance, median, skewness, and kurtosis.
 - the last row the age value
+
+3. feature extraction process
+-parameters
+-number of cluster
+-input: intensity of MRI (in a column vector)
+-ouput: the features and the label (only the train data has the label)
+
+steps:
+(1) clustering the MRI to the given number clusters using K++ means;
+(2) compute the statistical feature for each cluster
+(3) write the output into a csv file
+
+
+
 
