@@ -4,6 +4,7 @@ Notes
 Documentation
 1.Dataset name
 format: 'cluster_#_train_org.csv'//'cluster_#_test_org.csv'
+	'sumupCluster_#_train_org.csv'//'sumupCluster_#_test_org.csv'
 -org indicates that there is no transformation to the MRI intensity values
 -# stands for the number of cluster used in k++ means clustering method
 -train/test indicates training and test set repectively
@@ -13,6 +14,8 @@ format: 'cluster_#_train_org.csv'//'cluster_#_test_org.csv'
 - each column is a data point;
 - there are six statistical features: mean, variance, standard variance, median, skewness, and kurtosis.
 - the last row the age value
+- in the sumupCluster, the feature is the sum of the respective statistical value of the all clusters
+
 
 3. feature extraction process
 -parameters
