@@ -12,7 +12,7 @@ format: 'cluster_#_train_org.csv'//'cluster_#_test_org.csv'
 
 2.Data description
 - each column is a data point;
-- there are six statistical features: mean, variance, standard variance, median, skewness, and kurtosis.
+- there are six statistical features: mean, variance, standard variance, median, skewness, kurtosis 3 and 4 order moment.
 - the last row the age value
 - in the sumupCluster, the feature is the sum of the respective statistical value of the all clusters
 
