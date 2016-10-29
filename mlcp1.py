@@ -118,17 +118,17 @@ outputFileName = 'submissionCZLassoLarsOnlyOrg.csv'
 # csvFormatedOutput(outputFileName, lassoEstimation)
 
 # rescaling the output
-minAge = min(trainingTargets);
-maxAge = max(trainingTargets);
+#minAge = min(trainingTargets);
+#maxAge = max(trainingTargets);
 
-temp = []
-temp.append(genfromtxt(outputFileName, delimiter=','))
-temp = (np.array(temp).reshape(-1, np.array(temp).shape[-1]))
+#temp = []
+#temp.append(genfromtxt(outputFileName, delimiter=','))
+#temp = (np.array(temp).reshape(-1, np.array(temp).shape[-1]))
 # tempOut= (np.array(lassoEstimation).reshape(-1, np.array(lassoEstimation).shape[-1]))
 # testExamples = np.array(testFeatures).shape[1]
-tempOut = (np.array(temp[:,1]).reshape(-1, np.array(temp[:,1]).shape[-1]))
+#tempOut = (np.array(temp[:,1]).reshape(-1, np.array(temp[:,1]).shape[-1]))
 
-print(tempOut.shape)
+#print(tempOut.shape)
 # for i in range(len(tempOut)):
 #     tempOut[i] = int(np.round(tempOut[i]))
 #
